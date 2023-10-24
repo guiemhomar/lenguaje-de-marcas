@@ -1,0 +1,32 @@
+html{
+font-family: Arial;
+background-color: #F3F4F6;
+margin: 0px;
+padding: 0px;
+}
+h1{
+background-color: #E0E0E0;
+color:black ;
+text-align: center;
+padding: 20px;
+};
+h2{
+color:  #555;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-left: 20px;
+}
+.destacat{
+color: #FF5733;
+font-weight: bold;
+font-size: 150%;
+}
+ul{
+list-style-type: circle;
+margin-left: 40px;
+}
+li{
+color: #666;
+margin-bottom: 10px;
+}
+
