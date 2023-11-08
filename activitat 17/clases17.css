@@ -1,0 +1,25 @@
+.aside{
+    width: 40%;
+    float: left;
+    background-color: #00ff99;
+}
+.main{
+  background-color: #ff66ff;
+}
+.nav{
+    background-color: #006666;
+    color: white;
+}
+.body{
+    background-color: #0000ff;
+    color: white;
+}
+.grid-container{
+    display: grid;  
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    width: auto;
+}
+.grid-item{
+    grid-template-rows: auto auto;
+}
