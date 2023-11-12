@@ -3,7 +3,8 @@ aside{
     background-color: #00ff99;
     grid-area: MyAside;
     font-weight: bold;
-    display: grid;
+    
+    
 }
 main{
   background-color: #ff66ff;
