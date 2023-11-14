@@ -1,2 +1,44 @@
-
- 
+.body{
+    background-color: #660066;
+    color: white;
+    
+    }
+    .body::after{
+        content: "infinito";
+    }
+@media screen and (max-width: 1400px) {
+    .body {
+      background-color: #cc00cc;
+      color: black;
+    }
+    .body::after{
+        content: "1400px.";
+        }
+}
+@media  screen and (max-width: 1100px) {
+    .body {
+       background-color: #ff66ff;
+       color: black;
+    }
+    .body::after{
+        content: "1100px.";
+        }
+}
+@media  screen and (max-width:900px) {
+    .body {
+       background-color:#ff99ff;
+       color: black;
+    }
+    .body::after{
+        content: "900px.";
+        }
+}
+@media  screen and (max-width:600px) {
+    .body {
+       background-color: white;
+       color: black;
+    }
+    .body::after{
+        content: "600px.";
+        }
+}
