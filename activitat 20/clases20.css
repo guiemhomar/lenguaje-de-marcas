@@ -1,0 +1,43 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #0099ff;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.seccions {
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: white
+}
+
+.seccions:hover {
+    color: red;
+    transition-duration: 2s;
+}
+.button {
+    display: none;
+}
+@media screen and (max-width: 1040px) {
+    .seccions {
+        display: none;
+    }
+
+    .button {
+        display: block;
+    }
+    .aaa{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cerca {
+        display: none;
+    }
+}
