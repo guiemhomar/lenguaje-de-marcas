@@ -31,6 +31,9 @@
     .button {
         display: block;
     }
+    .aaa{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -38,4 +41,3 @@
         display: none;
     }
 }
-
