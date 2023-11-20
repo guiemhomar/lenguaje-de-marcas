@@ -1,8 +1,8 @@
 .flex-container {
     display: flex;
     flex-direction: row;
-    background-color: #0099ff;
-    color: white;
+    background-color: #a6a6a6;
+    color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 8px;
     align-items: center;
@@ -14,10 +14,12 @@
     text-decoration: none;
     font-size: 18px;
     color: white
+}   
+.cerca{
+    border-radius: 10px;
 }
-
 .seccions:hover {
-    color: red;
+    color: black;
     transition-duration: 2s;
 }
 .button {
@@ -40,4 +42,101 @@
     .cerca {
         display: none;
     }
+}
+
+
+
+
+
+.primer{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    justify-content: space-evenly;
+}
+.img1{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+
+
+flex-container2{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: blue;
+}
+.titol{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.img2{
+    width: 80px ;
+    height: 80px;
+    margin: 10px;
+}
+.nom{
+    color:#595959;
+    font-weight: bold;
+    font-size: 20px; 
+    margin: 10px;   
+}
+.carrec{
+    color: white; 
+    font-size: 20px;   
+}
+.descripcio{
+    color: black;
+    font-size: 16px;
+}
+.segundo{
+    background-color: #999999;
+    text-align: center;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+.segundo:hover{
+    transform: scale(1.02);
+}
+
+
+
+.grid-container{
+    display: grid;
+    gap: 20px;   
+    grid-template-columns: auto auto auto;
+    width: auto;
+    overflow: hidden;
+    background-color: brown;
+    margin: 100px 100px 0px 100px;
+    text-align: center;
+}
+.titol2{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.grid-container > div{
+    background-color: white;
+    
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+    border: 5px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.img3{
+    width: 350px;
+    height: 250px;
+    border-radius: 20px 20px 0px 0px;
+}
+.grid-container > div:hover{
+    transform: scale(1.01);
 }
