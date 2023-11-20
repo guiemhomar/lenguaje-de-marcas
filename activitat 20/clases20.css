@@ -47,54 +47,77 @@
 
 
 
-
+.grid-primer{
+    display: grid;
+    grid-template-areas: 
+    "SobreNosaltres foto";
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 100px 50px 100px;
+    gap: 50px;
+    padding-top: 40px;
+}
 .primer{
-    display: flex;
-    flex-direction: row;
-    background-color: red;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: SobreNosaltres;
+    margin: 100px 0px 100px 0px;
 }
 .img1{
-    height: 200px;
-    width: 200px;
-    border-radius: 20px;
+    grid-template-areas: foto;
+    height: 400px;
+    width: 600px;
+}
+.redondeado10px{
+    border-radius: 10px;
+}
+.fuente{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.fuente-lil{
+    font-size: 14px;
+}
+.fondo{
+    background-color: #d9d9d9;
+}
+.margin{
+    margin: 0px 100px 50px 100px;
 }
 
 
 
-flex-container2{
-    display: flex;
-    flex-direction: row;
-    font-family: 'Courier New', Courier, monospace;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: blue;
+.grid-segundo{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 50px;
 }
-.titol{
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+.nom{
+    color: #666699;
+}
+.negrita{
+    font-weight: bold;
+}
+.fuente-mid{
+    font-size: 24px;
 }
 .img2{
     width: 80px ;
     height: 80px;
     margin: 10px;
 }
-.nom{
-    color:#595959;
-    font-weight: bold;
-    font-size: 20px; 
-    margin: 10px;   
+.color{
+     color: #595959;;
 }
 .carrec{
     color: white; 
     font-size: 20px;   
 }
 .descripcio{
-    color: black;
     font-size: 16px;
 }
 .segundo{
-    background-color: #999999;
+    
     text-align: center;
     width: 200px;
     height: 300px;
@@ -103,26 +126,24 @@ flex-container2{
 .segundo:hover{
     transform: scale(1.02);
 }
+.centro{
+    text-align: center;
+}
 
-
-
+.p-20{
+    padding-top: 20px;
+}
 .grid-container{
     display: grid;
     gap: 20px;   
     grid-template-columns: auto auto auto;
     width: auto;
     overflow: hidden;
-    background-color: brown;
-    margin: 100px 100px 0px 100px;
+   
     text-align: center;
 }
-.titol2{
-    font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.text{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+
+
 .grid-container > div{
     background-color: white;
     
@@ -139,4 +160,22 @@ flex-container2{
 }
 .grid-container > div:hover{
     transform: scale(1.01);
+}
+
+
+.grid-tercero{
+    display: grid;
+    justify-content: space-between
+
+}
+.ancho{
+    width: 100%;
+}
+.margin25{
+    margin-left: 250px;
+}
+
+.contenidor-marges{
+    width: 80%;
+    margin: auto;
 }
