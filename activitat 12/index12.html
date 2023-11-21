@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .grid-item {
+      padding: 20px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    /* Media Query para pantallas más pequeñas */
+    @media screen and (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Otra Media Query para pantallas aún más pequeñas */
+    @media screen and (max-width: 400px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-    
+  <div class="grid-container">
+    <div class="grid-item">Elemento 1</div>
+    <div class="grid-item">Elemento 2</div>
+    <div class="grid-item">Elemento 3</div>
+  </div>
 </body>
 </html>

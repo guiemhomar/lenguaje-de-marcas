@@ -3,12 +3,13 @@
     flex-direction: row;
     background-color: #a6a6a6;
     color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 8px;
+    
+    
     align-items: center;
     justify-content: space-between;
+}.fondowhite{
+    background-color: white;
 }
-
 .seccions {
     text-align: center;
     text-decoration: none;
@@ -25,47 +26,30 @@
 .button {
     display: none;
 }
-@media screen and (max-width: 1040px) {
-    .seccions {
-        display: none;
-    }
-
-    .button {
-        display: block;
-    }
-    .aaa{
-        display: none;
-    }
+.p-8{
+    padding: 8px;
 }
-
-@media screen and (max-width: 600px) {
-    .cerca {
-        display: none;
-    }
-}
-
 
 
 
 .grid-primer{
     display: grid;
-    grid-template-areas: 
-    "SobreNosaltres foto";
-    grid-template-columns: 1fr 1fr;
+    
+    grid-template-columns: repeat(2,1fr);
     margin: 0px 100px 50px 100px;
     gap: 50px;
-    padding-top: 40px;
 }
 .primer{
     display: grid;
     grid-template-columns: auto;
     grid-template-areas: SobreNosaltres;
-    margin: 100px 0px 100px 0px;
+    margin:  40px 0px 0px;
 }
 .img1{
     grid-template-areas: foto;
-    height: 400px;
-    width: 600px;
+    height: 65%;
+    width: 100%;
+    margin-top: 40px;
 }
 .redondeado10px{
     border-radius: 10px;
@@ -80,7 +64,7 @@
     background-color: #d9d9d9;
 }
 .margin{
-    margin: 0px 100px 50px 100px;
+    margin: 20px 100px 0px 100px;
 }
 
 
@@ -181,7 +165,7 @@
     margin-left: 250px;
 }
 .contenidor-marges{
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 .contenidor-marges2{
@@ -243,4 +227,51 @@
 .grid-cuarto{
     display: grid;
     grid-template-rows: auto;
+}
+@media screen and (max-width: 1024px) {
+    .seccions {
+        display: none;
+    }
+    .grid-segundo{
+        grid-template-columns: repeat(2,1fr);
+        margin:auto;
+        width: 60%;
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+        width: 36%;
+        margin: auto;
+    }
+    .flex{
+        width: 165%;
+    }
+    .contenidor-marges2{
+       margin-left: 10px  ;
+    }
+    .grid-tercero{
+        grid-template-columns: repeat(3,1fr);
+        width: 100%;
+    }
+    .grid-cuarto{
+        width: 100%;
+    }
+    .button {
+        display: block;
+    }
+    .aaa{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .cerca {
+        display: none;
+    }
+    .grid-primer{
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+    
 }

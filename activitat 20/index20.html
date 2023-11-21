@@ -9,14 +9,14 @@
 </head>
 
 <body>
-    <div class="grid-cero">
+    <div class="grid-cero fuente p-8">
         <h3>CIDETech</h3>
         <div class="aaa">
             <a href="" class="seccions">Inici</a>
-            <a href="" class="seccions">Sobre nosaltres</a>
-            <a href="" class="seccions">Serveis</a>
-            <a href="" class="seccions">Portofolio</a>
-            <a href="" class="seccions">Contacte</a>
+            <a  class="seccions" href="#seccio1">Sobre nosaltres</a>
+            <a  class="seccions" href="#seccio2">Serveis</a>
+            <a  class="seccions" href="#seccio3">Portofolio</a>
+            <a  class="seccions" href="#seccio4">Contacte</a>
         </div>
         <input type="text" placeholder="cerca..." class="cerca">
         <div class="button">
@@ -26,10 +26,10 @@
 
     <div class="fondo">
         <div class="grid-primer">
-            <div class="primer fuente fuente-lil">
-                <h1>Sobre nosaltres</h1>
+            <div class="primer fuente fuente-lil fondowhite redondeado10px sombra p-8">
+                <h1 id="seccio1">Sobre nosaltres</h1>
 
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                <p class="fuente color">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip
@@ -37,7 +37,7 @@
                     dolore eu
                     fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                     deserunt mollit anim id est laborum."</p>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                <p class="fuente color">""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip
@@ -50,10 +50,10 @@
         </div>
     </div>
 
-    <h1 class="fuente margin">Els nostres serveis</h1>
+    <h1 class="fuente margin" id="seccio2">Els nostres serveis</h1>
     <div class="grid-segundo margin">
 
-        <div class="segundo fondo sombra">
+        <div class="segundo fondo sombra p-8">
             <img src="1 servicio.png" class="img2">
             <p class="nom negrita fuente-mid fuente">Disseny Gràfic</p>
             <p class="descripcio fuente color">Creació de solucions visuals per a la teva marca, incloent logotips,
@@ -61,7 +61,7 @@
                 corporativa i publicitat.</p>
         </div>
 
-        <div class="segundo fondo sombra">
+        <div class="segundo fondo sombra p-8">
             <img src="2 servicio.png" class="img2">
             <p class="nom negrita fuente-mid fuente">Desenvolupament Web i videojocs</p>
             <p class="descripcio fuente color">Desenvolupament de llocs web personalitzats, des de pàgines corporatives
@@ -69,7 +69,7 @@
                 botigues en línia complexes.</p>
         </div>
 
-        <div class="segundo fondo sombra">
+        <div class="segundo fondo sombra p-8">
             <img src="3 servicio.png" class="img2">
             <p class="nom negrita fuente-mid fuente">SEO i Màrqueting Digital</p>
             <p class="descripcio fuente color">Optimització per a motors de cerca i estratègies de màrqueting per
@@ -77,7 +77,7 @@
                 visibilitat de línia.</p>
         </div>
 
-        <div class="segundo fondo sombra">
+        <div class="segundo fondo sombra p-8">
             <img src="4 servicio.png" class="img2">
             <p class="nom negrita fuente-mid fuente">Suport Tècnic</p>
             <p class="descripcio fuente color">Assistènica tècnica i suport continu per a tots els nostres productes i
@@ -86,8 +86,8 @@
     </div>
 
     <div class="fondo">
-        <h1 class="fuente margin p-20">El nostre Portofolio</h1>
-        <div class="grid-container contenidor-marges2 p-40bot">
+        <h1 class="fuente margin p-50top" id="seccio3">El nostre Portofolio</h1>
+        <div class="grid-container contenidor-marges p-40bot">
             <div class="sombra">
                 <img src="imagen1 portfolio.jpg" class="img3">
                 <h2 class="nom negrita fuente-mid fuente">Projecte 1</h2>
@@ -110,7 +110,7 @@
     </div>
     <div>
         <div class="centro p-50top p-40bot">
-            <h3 class="fuente negrita">Contacta'ns</h3>
+            <h3 class="fuente negrita" id="seccio4">Contacta'ns</h3>
             <p class="fuente color">Si tens alguna consulta, no dubtis a contactar-nos mitjançant el següent formulari.</p>
         </div> 
         <div class="contenidor-marges2 p-40bot">
@@ -131,12 +131,12 @@
                 <h3 class="">CIDETech</h3>
                 <p class="">CIDETech és una empresa líder en solucions tecnològiques, dedicada a portar les últimes innovaciones al mercat.</p>
             </div>
-            <div class="">
+            <div class="flex">
                 <h3 class="">Navegació</h3>
-                <p class="">Sobre nosaltres</p>
-                <p class="">Serveis</p>
-                <p class="">Portfolio</p>
-                <p class="">Contacte</p>
+                <a   class="fuentefooter" href="#seccio1">Sobre nosaltres</a>
+                <a  class="fuentefooter" href="#seccio2">Serveis</a>
+                <a   class="fuentefooter" href="#seccio3">Portofolio</a>
+                <a  class="fuentefooter" href="#seccio4">Contacte</a>
             </div>
             <div class="">
                 <h3 class="">Contacta'ns</h3>
@@ -156,7 +156,7 @@
     <div class="fondofooter">
         <div class="grid-cuarto contenidor-marges2 fuentefooter p-40bot">
             <div class="tercero5">
-                <p class="centro">©2023 CIDETech | Dissenyat per @ghomar@nigul.cide.es</p>
+                <p class="centro">©2023 CIDETech | Dissenyat per <a href="">ghomar@nigul.cide.es</a></p>
             </div>
         </div>
     </div>  
