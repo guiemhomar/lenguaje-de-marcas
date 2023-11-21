@@ -1,4 +1,4 @@
-.flex-container {
+.grid-cero {
     display: flex;
     flex-direction: row;
     background-color: #a6a6a6;
@@ -107,7 +107,7 @@
     margin: 10px;
 }
 .color{
-     color: #595959;;
+     color: #595959;
 }
 .carrec{
     color: white; 
@@ -119,7 +119,7 @@
 .segundo{
     
     text-align: center;
-    width: 200px;
+    width: 220px;
     height: 300px;
     border-radius: 10px;
 }
@@ -129,8 +129,11 @@
 .centro{
     text-align: center;
 }
+.lilmarginbot{
+    margin-bottom: 5px;
+}
 
-.p-20{
+.p-20top{
     padding-top: 20px;
 }
 .grid-container{
@@ -142,16 +145,18 @@
    
     text-align: center;
 }
-
-
+.p-40bot{
+    padding-bottom: 40px;
+}
+.p-50top{
+    padding-top: 50px;
+}
 .grid-container > div{
     background-color: white;
     
     width: 350px;
     height: auto;
     border-radius: 20px;
-    border: 5px;
-    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 .img3{
     width: 350px;
@@ -161,21 +166,81 @@
 .grid-container > div:hover{
     transform: scale(1.01);
 }
-
-
-.grid-tercero{
-    display: grid;
-    justify-content: space-between
-
+.sombra{
+    border: 5px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
+.largo{
+    height:100px;
+}
+
 .ancho{
     width: 100%;
 }
 .margin25{
     margin-left: 250px;
 }
-
 .contenidor-marges{
     width: 80%;
     margin: auto;
+}
+.contenidor-marges2{
+    width: 60%;
+    margin: auto;
+}
+.redondeado5px{
+    border-radius: 5px;
+    border-color: #b3b3cc;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+.fondocolor{
+    background-color: #b3b3cc;
+    padding: 5px;
+}
+.marginboton{
+    width: 100.5%;
+    margin: auto;
+}
+.grid-tercero{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}   
+.tercero1{
+    display: grid;
+    grid-template-areas: CIDETech;
+}
+.tercero2{
+    display: grid;
+    grid-template-areas: Navegacio;
+}
+.tercero3{
+    display: grid;
+    grid-template-areas: Contactans;
+}
+.tercero4{
+    display: grid;
+    grid-template-areas: Xarxes socials;
+}
+.tercero5{
+    display: grid;
+    grid-template-areas: footer;
+}
+.fondofooter{
+    background-color:#262626;
+}
+.fuentefooter{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+.imgfooter{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+.grid-cuarto{
+    display: grid;
+    grid-template-rows: auto;
 }
