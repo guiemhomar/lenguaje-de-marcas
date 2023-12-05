@@ -7,8 +7,6 @@
     
     align-items: center;
     justify-content: space-between;
-}.fondowhite{
-    background-color: white;
 }
 .seccions {
     text-align: center;
@@ -44,11 +42,12 @@
     grid-template-columns: auto;
     grid-template-areas: SobreNosaltres;
     margin:  40px 0px 0px;
+    height: 45%;
 }
 .img1{
     grid-template-areas: foto;
-    height: 65%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     margin-top: 40px;
 }
 .redondeado10px{
@@ -68,7 +67,9 @@
 }
 
 
-
+.p-20bot{
+    padding-bottom: 20px;
+}
 .grid-segundo{
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -236,13 +237,13 @@
         grid-template-columns: repeat(2,1fr);
         margin:auto;
         width: 60%;
-        padding-top: 0px;
         padding-bottom: 40px;
     }
     .grid-container{
         grid-template-columns: 1fr;
         width: 36%;
         margin: auto;
+        padding-top: 40px;
     }
     .flex{
         width: 165%;
@@ -263,6 +264,11 @@
     .aaa{
         display: none;
     }
+    .img1{
+        width: 100%;
+        height: 80%;
+    }
+    
 }
 
 @media screen and (max-width: 430px) {
@@ -273,5 +279,28 @@
         grid-template-columns: 1fr;
         gap: 0px;
     }
-    
+    .grid-primer{
+        margin: 0px 50px 20px 50px;
+    }
+    .img1{
+        margin-top: 0px;
+        width: 100%;
+    }
+    .grid-segundo{
+        grid-template-columns: 1fr;
+        width: 50%;
+    }
+    .fuente{
+        text-align: center;
+    }
+    .grid-container{
+        width: 88%;
+    }
+    .flex{
+        width: 155%;
+    }
+    .grid-tercero{
+        grid-template-columns: 1fr;
+
+    }
 }
