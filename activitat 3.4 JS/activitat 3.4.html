@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>chiste</p>
+
+    <div>
+        <button onmouseover="traduir()">traduir</button>
+        <button onmouseover="canviaColor()">canvia color</button>
+    </div> 
+    
+
+    <script>
+        function traduir() {
+            let parrafos = document.querySelectorAll("p")
+            for (const parrafo of parrafos) {
+                parrafo.style.fontSize = "10px"
+            }
+        }
+    </script>
+</body>
+</html>

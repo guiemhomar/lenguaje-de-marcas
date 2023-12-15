@@ -6,19 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <button onclick="afegir()">afegir text</button>
-    </div>
-    <div>
-        <button onclick="suprimir()">suprimir text</button>
-    </div>
-    <script>
+    
+<button onclick="afegir()">afegir element</button>
+<button onclick="suprimir()">suprimir element</button>
+   
+   <script>
         function afegir(){
-            let parrafos = document.querySelectorAll()
-            for (const parrafo of parrafos) {
-                parra
-            }
+        let nouParagraf = document.createElement("div");
+        nouParagraf.textContent = "Aquest és un nou paràgraf.";
+        document.body.appendChild(nouParagraf);
+        }
+        function suprimir(){
+        let borrarParagraf = document.getElementsByTagName("div");
+        let eliminat = borrarParagraf[borrarParagraf.length - 1];
+        document.body.removeChild(eliminat);
         }
     </script>
+
 </body>
 </html>
