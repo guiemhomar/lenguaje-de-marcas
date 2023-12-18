@@ -4,24 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="activitat 3.4.css">
 </head>
-<body>
+<body class="letra fondo tamanyo">
 
-    <p>chiste</p>
+    <p id="traduirText">chiste</p>
+    <p id="color">canvi de color</a>
 
     <div>
-        <button onmouseover="traduir()">traduir</button>
-        <button onmouseover="canviaColor()">canvia color</button>
+        <button onmouseover="traduir()" onmouseleave="defaultText()">traduir</button>
+        <button onmouseover="canviaColor()" onmouseleave="defaultColor()">canvia color</button>
     </div> 
     
 
     <script>
-        function traduir() {
-            let parrafos = document.querySelectorAll("p")
-            for (const parrafo of parrafos) {
-                parrafo.style.fontSize = "10px"
-            }
+        function traduir(){
+            
+            let text1 = document.getElementById("traduirText").innerText;
+            
+            let traduccions = {
+            "chiste": "acudit" 
         }
+            if (traduccions.hasOwnProperty(text1)) {
+                let textTraduit = traduccions[text1];
+                document.getElementById("traduirText").innerText = textTraduit;
+            } 
+        }
+        
+        function defaultText(){
+        
+            let text1 = document.getElementById("traduirText").innerText;
+            
+            let traduccions = {
+                "acudit" : "chiste" 
+        }
+            if (traduccions.hasOwnProperty(text1)) {
+                let textTraduit = traduccions[text1];
+                document.getElementById("traduirText").innerText = textTraduit;
+            } 
+        }
+
+        function canviaColor(){
+        document.getElementById("color").style.color="#ffccff";
+       }
+
+        function defaultColor(){
+        document.getElementById("color").style.color="";
+       }
     </script>
 </body>
 </html>

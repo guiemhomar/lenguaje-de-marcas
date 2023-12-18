@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="activitat 3.5.css">
+</head>
+<body>
+    <div class="flex-container">
+     <h3 class="titol">Editorial</h3>
+    <div><a href="" class="seccions">Inici</a>
+        <a href="" class="seccions">Llibres</a>
+        <a href="" class="seccions">Autors</a>
+        <a href="" class="seccions">Contactes</a>
+    </div>
+        <input type="text" placeholder="cerca...">
+    </div>
+    
+    <div class="center m100">
+        <button onclick="afegir()">afegir classe</button>
+        <button onclick="suprimir()">suprimir classe</button>
+    </div>
+    
+    <script>
+        function afegir() {
+            let novaClasse = document.getElementById("novaClasse");
+            novaClasse.classList.add("fondo");
+        }
+
+        function suprimir() {
+            let borrarClasse = document.getElementById("borrarClasse");
+            borrarClasse.classList.remove("fondo");
+        }
+    </script>
+</body>
+</html>
