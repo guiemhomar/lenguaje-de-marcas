@@ -8,7 +8,7 @@
 </head>
 <body class="letra fondo tamanyo">
 
-    <p id="traduirText">chiste</p>
+    <p id="traduirText">casa</p>
     <p id="color">canvi de color</a>
 
     <div>
@@ -23,7 +23,7 @@
             let text1 = document.getElementById("traduirText").innerText;
             
             let traduccions = {
-            "chiste": "acudit" 
+            "casa": "house" 
         }
             if (traduccions.hasOwnProperty(text1)) {
                 let textTraduit = traduccions[text1];
@@ -36,7 +36,7 @@
             let text1 = document.getElementById("traduirText").innerText;
             
             let traduccions = {
-                "acudit" : "chiste" 
+                "house" : "casa" 
         }
             if (traduccions.hasOwnProperty(text1)) {
                 let textTraduit = traduccions[text1];
@@ -45,7 +45,7 @@
         }
 
         function canviaColor(){
-        document.getElementById("color").style.color="#ffccff";
+        document.getElementById("color").style.color="black";
        }
 
         function defaultColor(){
