@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="activitat 3.7.css">
+</head>
+
+<body>
+    <div class="grid-cero fuente p-8">
+        <h3>CIDETech</h3>
+        <div class="aaa">
+            <a href="" class="seccions">Inici</a>
+            <a  class="seccions" href="#seccio1">Sobre nosaltres</a>
+            <a  class="seccions" href="#seccio2">Serveis</a>
+            <a  class="seccions" href="#seccio3">Portofolio</a>
+            <a  class="seccions" href="#seccio4">Contacte</a>
+        </div>
+        <input type="text" placeholder="cerca..." class="cerca">
+        <div class="button">
+            <input onclick="Menu()" type="button" value="☰">
+        </div>
+    </div>
+    <div class="menu" id="menuDesplegable">
+        <a class="seccionsMenu" href="#seccio1">Sobre nosaltres</a>
+        <a class="seccionsMenu" href="#seccio2">Serveis</a>
+        <a class="seccionsMenu" href="#seccio3">Portofolio</a>
+        <a class="seccionsMenu" href="#seccio4">Contacte</a>
+    </div>
+ 
+    <div class="fondo">
+        <div class="grid-primer">
+            <div class="primer fuente fuente-lil redondeado10px p-8">
+                <h1 id="seccio1">Sobre nosaltres</h1>
+
+                <p class="fuente color">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum."</p>
+                <p class="fuente color">""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat."</p>
+
+            </div>
+            <div>
+                <img src="act20 sobresnosaltres.jpg" class="img1 redondeado10px sombra">
+            </div>
+        </div>
+    </div>
+
+    <h1 class="fuente margin" id="seccio2">Els nostres serveis</h1>
+    <div class="grid-segundo margin p-40bot">
+
+        <div class="segundo fondo sombra p-8">
+            <img src="1 servicio.png" class="img2">
+            <p class="nom negrita fuente-mid fuente">Disseny Gràfic</p>
+            <p class="descripcio fuente color">Creació de solucions visuals per a la teva marca, incloent logotips,
+                identitat
+                corporativa i publicitat.</p>
+        </div>
+
+        <div class="segundo fondo sombra p-8">
+            <img src="2 servicio.png" class="img2">
+            <p class="nom negrita fuente-mid fuente">Desenvolupament Web i videojocs</p>
+            <p class="descripcio fuente color">Desenvolupament de llocs web personalitzats, des de pàgines corporatives
+                fins a
+                botigues en línia complexes.</p>
+        </div>
+
+        <div class="segundo fondo sombra p-8">
+            <img src="3 servicio.png" class="img2">
+            <p class="nom negrita fuente-mid fuente">SEO i Màrqueting Digital</p>
+            <p class="descripcio fuente color">Optimització per a motors de cerca i estratègies de màrqueting per
+                millorar la teva
+                visibilitat de línia.</p>
+        </div>
+
+        <div class="segundo fondo sombra p-8">
+            <img src="4 servicio.png" class="img2">
+            <p class="nom negrita fuente-mid fuente">Suport Tècnic</p>
+            <p class="descripcio fuente color">Assistènica tècnica i suport continu per a tots els nostres productes i
+                serveis.</p>
+        </div>
+    </div>
+
+    <div class="fondo">
+        <h1 class="fuente margin p-50top p-40bot" id="seccio3">El nostre Portofolio</h1>
+        <div class="grid-container contenidor-marges p-40bot">
+            <div class="sombra">
+                <img src="imagen1 portfolio.jpg" class="img3">
+                <h2 class="nom negrita fuente-mid fuente">Projecte 1</h2>
+                <p class="descripcio fuente color">Descripció breu del projecte.</p>
+                <p class="nom negrita fuente">Veure Detalls</p>
+            </div>
+            <div class="sombra">
+                <img src="imagen 2 portfolio.jpg" class="img3">
+                <h2 class="nom negrita fuente-mid fuente">Projecte 2</h2>
+                <p class="descripcio fuente color">Descripció breu del projecte.</p>
+                <p class="nom negrita fuente">Veure Detalls</p>
+            </div>
+            <div class="sombra">
+                <img src="imagen 3 portfolio.jpg" class="img3">
+                <h2 class="nom negrita fuente-mid fuente">Projecte 3</h2>
+                <p class="descripcio fuente color">Descripció breu del projecte.</p>
+                <p class="nom negrita  fuente">Veure Detalls</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="centro p-50top p-40bot">
+            <h3 class="fuente negrita" id="seccio4">Contacta'ns</h3>
+            <p class="fuente color">Si tens alguna consulta, no dubtis a contactar-nos mitjançant el següent formulari.</p>
+        </div> 
+        <div class="contenidor-marges2 p-40bot">
+            <form class="flex">
+                <label for="fname" class="lilmarginbot">Nom:</label>
+                <input type="text" id="fname" name="fname" class="ancho redondeado5px lilmarginbot">
+                <label for="lname" class="lilmarginbot">Correu electrònic:</label>
+                <input type="text" id="lname" name="lname" class="ancho redondeado5px lilmarginbot">
+                <label for="lname" class="lilmarginbot">Missatge:</label>
+                <input type="text" id="lname" name="lname" class="ancho largo redondeado5px lilmarginbot">
+                <input type="submit" class="fondocolor redondeado5px marginboton"></input>
+            </form>
+        </div>
+    </div>
+    <div class="fondofooter">
+        <div class="grid-tercero contenidor-marges2 fuentefooter p-40bot p-50top">
+            <div class="">
+                <h3 class="">CIDETech</h3>
+                <p class="">CIDETech és una empresa líder en solucions tecnològiques, dedicada a portar les últimes innovaciones al mercat.</p>
+            </div>
+            <div class="flex">
+                <h3 class="">Navegació</h3>
+                <a   class="fuentefooter" href="#seccio1">Sobre nosaltres</a>
+                <a  class="fuentefooter" href="#seccio2">Serveis</a>
+                <a   class="fuentefooter" href="#seccio3">Portofolio</a>
+                <a  class="fuentefooter" href="#seccio4">Contacte</a>
+            </div>
+            <div class="">
+                <h3 class="">Contacta'ns</h3>
+                <p class="">971 606 499</p>
+                <p class="">info@cidetech.com</p>
+                <p class="">Carrer de l'Arner 3,Palma</p>
+            </div>
+            <div class="">
+                <h3 class="">Xarxes socials</h3>
+                <img src="instagram.png" class="imgfooter">
+                <img src="twitter.png" class="imgfooter">
+                <img src="linkedin.png" class="imgfooter">
+                <img src="facebook.png" class="imgfooter">
+            </div>
+        </div>
+    </div>
+    <div class="fondofooter">
+        <div class="grid-cuarto contenidor-marges2 fuentefooter p-40bot">
+            <div class="tercero5">
+                <p class="centro">©2023 CIDETech | Dissenyat per <a href="">ghomar@nigul.cide.es</a></p>
+            </div>
+        </div>
+    </div>  
+
+    <script>
+        function Menu(){
+            let menuDesplegable = document.getElementById("menuDesplegable");
+            let boton = document.querySelector('.button');
+            let topPos = boton.offsetTop + boton.offsetHeight;
+            let leftPos = boton.offsetLeft;
+            menuDesplegable.style.position = 'fixed';
+            menuDesplegable.style.top = topPos; 
+            menuDesplegable.style.left = leftPos; 
+            menuDesplegable.style.display = (menuDesplegable.style.display === "block") ? "none" : "block";
+        }
+    </script>
+
+    
+
+
+
+
+
+
+
+position = absolute
+    %% top left
+
+
+
+</body>
+
+</html>
