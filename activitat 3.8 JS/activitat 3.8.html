@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="activitat 3.8.css">
+</head>
+
+<body>
+
+  <header>
+    <h2>Actividad 3.8 JS</h2>
+  </header>
+
+  <input type="text" id="miInput" placeholder="Añadir una tarea...">
+
+  <button onclick="agregarTarea()">Añadir</button>
+
+  <ul id="listaDeTareas"></ul>
+
+  <script>
+    function agregarTarea() {
+      let inputTarea = document.getElementById("miInput").value;
+
+      if (inputTarea === '') {
+        alert("Por favor, ingresa una tarea.");
+      } else {
+        let listaDeTareas = document.getElementById("listaDeTareas");
+        let nuevaTarea = document.createElement("li");
+        let botonCerrar = document.createElement("span");
+
+        nuevaTarea.textContent = inputTarea;
+        botonCerrar.innerHTML = "X";
+        botonCerrar.className = "cerrar";
+
+        nuevaTarea.appendChild(botonCerrar);
+        listaDeTareas.appendChild(nuevaTarea);
+
+        document.getElementById("miInput").value = "";
+
+        botonCerrar.onclick = function() {
+          let div = this.parentElement;
+          div.style.display = "none";
+        };
+      }
+    }
+
+    let listaDeTareas = document.getElementById("listaDeTareas");
+    listaDeTareas.addEventListener("click", function(event) {
+      let elementoClicado = event.target;
+
+      if (elementoClicado.tagName === "LI") {
+        elementoClicado.classList.toggle("completada");
+      }
+    });
+  </script>
+
+</body>
+</html>

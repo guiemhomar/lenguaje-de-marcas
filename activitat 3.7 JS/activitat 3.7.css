@@ -306,7 +306,15 @@
 }
 .menu{
     display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
 }
 .seccionsMenu{
     display: block;
+}
+.btn{ 
+    color: white;
 }

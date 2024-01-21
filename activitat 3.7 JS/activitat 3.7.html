@@ -19,9 +19,9 @@
             <a  class="seccions" href="#seccio4">Contacte</a>
         </div>
         <input type="text" placeholder="cerca..." class="cerca">
-        <div class="button">
-            <input onclick="Menu()" type="button" value="☰">
-        </div>
+        <div>
+            <button onclick="toggleMenu()" class="button btn">hola</button>
+        </div>  
     </div>
     <div class="menu" id="menuDesplegable">
         <a class="seccionsMenu" href="#seccio1">Sobre nosaltres</a>
@@ -168,18 +168,24 @@
     </div>  
 
     <script>
-        function Menu(){
-            let menuDesplegable = document.getElementById("menuDesplegable");
-            let boton = document.querySelector('.button');
-            let topPos = boton.offsetTop + boton.offsetHeight;
-            let leftPos = boton.offsetLeft;
-            menuDesplegable.style.position = 'fixed';
-            menuDesplegable.style.top = topPos; 
-            menuDesplegable.style.left = leftPos; 
-            menuDesplegable.style.display = (menuDesplegable.style.display === "block") ? "none" : "block";
+        
+        function toggleMenu() {
+            document.getElementById("menuDesplegable").classList.toggle("show");
         }
-    </script>
 
+        window.onclick = function(event) {
+            if (!event.target.matches('.btn')) {
+                var dropdowns = document.getElementsByClassName("menu");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }   
+    </script>
     
 
 
@@ -188,8 +194,6 @@
 
 
 
-position = absolute
-    %% top left
 
 
 
