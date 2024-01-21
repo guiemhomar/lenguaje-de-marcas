@@ -316,5 +316,9 @@
     display: block;
 }
 .btn{ 
-    color: white;
+    color: black;
+}
+.meupos{
+    position: relative;
+    display: inline-block;
 }

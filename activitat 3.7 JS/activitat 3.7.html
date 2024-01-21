@@ -19,16 +19,17 @@
             <a  class="seccions" href="#seccio4">Contacte</a>
         </div>
         <input type="text" placeholder="cerca..." class="cerca">
-        <div>
-            <button onclick="toggleMenu()" class="button btn">hola</button>
-        </div>  
+        <div class="menupos">
+            <button onclick="toggleMenu()" class="btn">boton</button>
+            <div id="menuDesplegable" class="menu">
+                <a class="seccionsMenu" href="#seccio1">Sobre nosaltres</a>
+                <a class="seccionsMenu" href="#seccio2">Serveis</a>
+                <a class="seccionsMenu" href="#seccio3">Portofolio</a>
+                <a class="seccionsMenu" href="#seccio4">Contacte</a>
+            </div> 
+        </div>
     </div>
-    <div class="menu" id="menuDesplegable">
-        <a class="seccionsMenu" href="#seccio1">Sobre nosaltres</a>
-        <a class="seccionsMenu" href="#seccio2">Serveis</a>
-        <a class="seccionsMenu" href="#seccio3">Portofolio</a>
-        <a class="seccionsMenu" href="#seccio4">Contacte</a>
-    </div>
+    
  
     <div class="fondo">
         <div class="grid-primer">
@@ -174,7 +175,7 @@
         }
 
         window.onclick = function(event) {
-            if (!event.target.matches('.btn')) {
+            if (!event.target.matches('.button')) {
                 var dropdowns = document.getElementsByClassName("menu");
                 var i;
                 for (i = 0; i < dropdowns.length; i++) {
