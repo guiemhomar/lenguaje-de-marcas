@@ -130,14 +130,14 @@
         <button class="hid-sh" id="show">Mostrar</button>
 
         <form class="marg-top font-size" action="">
-            Nombre: <input type="text" name="Nombre" value="">
+            Nombre Completo: <input type="text" name="Nombre" value="">
             Comentario: <input type="text" name="Comentario" value="">
         </form>
 
-        <button class="enviar marg-top">Enviar comentario</button>
+        <button id="enter" class="enviar marg-top">Enviar comentario</button>
     </footer>
 
-    <div class=" marg-top10 areacomms" id="comentariosArea">
+    <div class="marg-top10 areacomms" id="comentariosArea">
         <div id="comentariosMostrados"></div>
     </div>
 
@@ -150,6 +150,21 @@
         });
         $("#show").click(function () {
             $("#comentariosArea").show();
+        });
+
+        $("form").keypress(function (event) {
+            if (event.which === 13) {
+
+                var nombre = $("input[name='Nombre']").val();
+                var comentario = $("input[name='Comentario']").val();
+
+                if (nombre && comentario) {
+                    var mensaje = '<strong>' + nombre + ':</strong> ' + comentario + '<br>';
+                    $("#comentariosMostrados").append(mensaje);
+                    $("input[name='Nombre']").val('');
+                    $("input[name='Comentario']").val('');
+                }
+            }
         });
 
         $(".enviar").click(function () {
@@ -168,14 +183,13 @@
             var x = $("form").serializeArray();
             var mensaje = "";
             $.each(x, function (i, field) {
-                mensaje += '<strong>' + field.name + ':</strong> ' + field.value + " ";
+                mensaje += field.value + " ";
             });
-            if (mensaje) {
-                $("#comentariosMostrados").append(mensaje + '<br>');
-            }
         });
     });
 </script>
+
+//cuando el li este listo, click, y borras el li mas ceracno(.closes)
 
 
 </html>
