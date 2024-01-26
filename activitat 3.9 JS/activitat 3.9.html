@@ -125,7 +125,6 @@
     <footer class="footerbg p20">
         <h1 id="seccio4">Comentaris</h1>
 
-
         <button class="hid-sh" id="hide">Ocultar</button>
         <button class="hid-sh" id="show">Mostrar</button>
 
@@ -133,9 +132,9 @@
             Nombre Completo: <input type="text" name="Nombre" value="">
             Comentario: <input type="text" name="Comentario" value="">
         </form>
-
-        <button id="enter" class="enviar marg-top">Enviar comentario</button>
     </footer>
+
+    <button type="submit" class="enviar marg-top">Enviar comentario</button>
 
     <div class="marg-top10 areacomms" id="comentariosArea">
         <div id="comentariosMostrados"></div>
@@ -154,12 +153,13 @@
 
         $("form").keypress(function (event) {
             if (event.which === 13) {
-
                 var nombre = $("input[name='Nombre']").val();
                 var comentario = $("input[name='Comentario']").val();
 
                 if (nombre && comentario) {
-                    var mensaje = '<strong>' + nombre + ':</strong> ' + comentario + '<br>';
+                    var mensaje = '<div class="commentContainer"><strong>' + nombre + ':</strong> ' + comentario +
+                        ' <button class="eliminarComentario">x</button></div>';
+
                     $("#comentariosMostrados").append(mensaje);
                     $("input[name='Nombre']").val('');
                     $("input[name='Comentario']").val('');
@@ -167,12 +167,18 @@
             }
         });
 
+        $(document).on('click', '.eliminarComentario', function () {
+            $(this).closest(".commentContainer").remove();
+        });
+
         $(".enviar").click(function () {
             var nombre = $("input[name='Nombre']").val();
             var comentario = $("input[name='Comentario']").val();
 
             if (nombre && comentario) {
-                var mensaje = '<strong>' + nombre + ':</strong> ' + comentario + '<br>';
+                var mensaje = '<div class="commentContainer"><strong>' + nombre + ':</strong> ' + comentario +
+                        ' <button class="eliminarComentario">x</button></div>';
+
                 $("#comentariosMostrados").append(mensaje);
                 $("input[name='Nombre']").val('');
                 $("input[name='Comentario']").val('');
@@ -188,8 +194,6 @@
         });
     });
 </script>
-
-//cuando el li este listo, click, y borras el li mas ceracno(.closes)
 
 
 </html>

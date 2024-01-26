@@ -1,4 +1,4 @@
-.flex-container{
+.flex-container {
     display: flex;
     flex-direction: row;
     background-color: #0099ff;
@@ -8,62 +8,88 @@
     align-items: center;
     justify-content: space-between;
 }
-.seccions{
+
+.seccions {
     text-align: center;
     text-decoration: none;
     font-size: 18px;
     color: white
 }
-.seccions:hover{
+
+.seccions:hover {
     color: red;
     transition-duration: 2s;
 }
-.footerbg{
+
+.footerbg {
     background-color: #a9aaaa;
 }
-.marg-top{
+
+.marg-top {
     margin-top: 20px;
 }
-.hid-sh{
-    background-color: #666966; 
-            color: white; 
-            padding: 5px 10px; 
-            font-size: 16px; 
-            border: none; 
-            border-radius: 5px; 
-            cursor: pointer; 
-            transition: background-color 0.3s; 
-        
+
+.hid-sh {
+    background-color: #666966;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
 }
+
 .hid-sh:hover {
     background-color: #7b7e7b;
 }
-.enviar{
-    background-color: #666966; 
-            color: white; 
-            padding: 5px 10px; 
-            font-size: 16px; 
-            border: none; 
-            border-radius: 5px; 
-            cursor: pointer; 
-            transition: background-color 0.3s; 
-        
+
+.enviar {
+    background-color: #666966;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
 }
+
 .enviar:hover {
     background-color: #7b7e7b;
 }
-.font-size{
+
+.font-size {
     font-size: 16px;
 }
-.areacomms{
-    max-width: auto; 
-    padding: 20px; 
-    border: 2px solid #818080; 
-    border-radius: 5px; 
+
+.areacomms {
+    max-width: auto;
+    padding: 20px;
+    border: 2px solid #818080;
+    border-radius: 5px;
 }
-.marg-top10{
+
+.marg-top10 {
     margin-top: 10px;
 }
-.p20{
+
+.p20 {
     padding: 20px;
+}
+
+.eliminarComentario {
+    background-color: #666966;
+    color: white;
+    padding: 4px 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.eliminarComentario:hover {
+    background-color: #7b7e7b;
 }
