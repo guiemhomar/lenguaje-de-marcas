@@ -3,10 +3,11 @@
     flex-direction: row;
     background-color: #a6a6a6;
     color: black;
-    
-    
     align-items: center;
     justify-content: space-between;
+}
+.fontclean{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .seccions {
     text-align: center;
@@ -27,15 +28,17 @@
 .p-8{
     padding: 8px;
 }
-
+.grid-nuevo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} 
 
 
 .grid-primer{
     display: grid;
     
-    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
     margin: 0px 100px 50px 100px;
-    gap: 50px;
 }
 .primer{
     display: grid;
@@ -65,7 +68,12 @@
 .margin{
     margin: 20px 100px 0px 100px;
 }
-
+.pleft20{
+    padding-left: 20px;
+}
+.pright20{
+    padding-right: 20px;
+}
 
 .p-20bot{
     padding-bottom: 20px;
@@ -158,9 +166,7 @@
 .largo{
     height:100px;
 }
-.center{
-    text-align: center;
-}
+
 .ancho{
     width: 100%;
 }
@@ -194,7 +200,10 @@
 .grid-tercero{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-}   
+}  
+.gap{
+    gap: 20px   ;
+} 
 .tercero1{
     display: grid;
     grid-template-areas: CIDETech;
