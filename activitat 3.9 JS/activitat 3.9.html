@@ -132,9 +132,8 @@
             Nombre Completo: <input type="text" name="Nombre" value="">
             Comentario: <input type="text" name="Comentario" value="">
         </form>
+        <button type="submit" class="enviar marg-top">Enviar comentario</button>
     </footer>
-
-    <button type="submit" class="enviar marg-top">Enviar comentario</button>
 
     <div class="marg-top10 areacomms" id="comentariosArea">
         <div id="comentariosMostrados"></div>
@@ -177,20 +176,12 @@
 
             if (nombre && comentario) {
                 var mensaje = '<div class="commentContainer"><strong>' + nombre + ':</strong> ' + comentario +
-                        ' <button class="eliminarComentario">x</button></div>';
+                    ' <button class="eliminarComentario">x</button></div>';
 
                 $("#comentariosMostrados").append(mensaje);
                 $("input[name='Nombre']").val('');
                 $("input[name='Comentario']").val('');
             }
-        });
-
-        $("button").click(function () {
-            var x = $("form").serializeArray();
-            var mensaje = "";
-            $.each(x, function (i, field) {
-                mensaje += field.value + " ";
-            });
         });
     });
 </script>
