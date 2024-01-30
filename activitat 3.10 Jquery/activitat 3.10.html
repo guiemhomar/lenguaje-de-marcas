@@ -28,12 +28,17 @@
     <div class="grid-primer">
         <div class="primer fuente fuente-lil redondeado10px p-8">
             <h1 id="seccio1" class="centro fontclean ">Buscador de vuelos</h1>
-
+            <div>
+                <label for="tags">Origen: </label>
+                <input id="origen">
+                <label for="tags">Destino: </label>
+                <input id="destino">
+            </div>
             <p class="fuente color"> </p>
         </div>
         <div class="grid-nuevo gap">
-            <p>FECHA IDA <input type="text" id="datepicker"></p>
-            <p>FECHA VUELTA<input type="text" id="datepicker"></p>
+            <p>FECHA IDA:<input type="text" id="datepicker"></p>
+            <p>FECHA VUELTA:<input type="text" id="datepicker"></p>
         </div>
     </div>
 </div>
@@ -155,7 +160,53 @@
     $(function () {
         $("#datepicker").datepicker();
     });
+
+    $( function() {
+    var availableTags = [
+      "Madrid",
+      "Alemania",
+      "Albania",
+      "Francia",
+      "Croacia",
+      "Italia",
+      "Portugal",
+      "Luxemburgo",
+      "Paises Bajos",
+      "Polonia",
+      "Bélgica",
+      "Reino Unido",
+      "Irlanda",
+      "Islandia",
+      "Noruega",
+      "Suecia",
+      "Finlandia",
+      "Dinamarca",
+      "Ucrania",
+      "Rusia",
+      "República Checa",
+      "Austria",
+      "Suiza",
+      "Eslovenia",
+      "Eslovaquia",
+      "Estonia",
+      "Lituania",
+      "Letonia",
+      "Hungria",
+      "Bulgaria",
+      "Rumania",
+      "Moldavia",
+      "Macedonia",
+      "Bosnia",
+      "Serbia",
+      "Grecia",
+      "Montenegro",
+    ];
+    $( "#origen, #destino" ).autocomplete({
+      source: availableTags
+    });
+  } );
 </script>
+
 
 
 </html>
