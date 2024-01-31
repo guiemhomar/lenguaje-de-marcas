@@ -7,16 +7,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="activitat 3.10.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
-   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+        integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
 </head>
 
 <div class="grid-cero p-8 fontclean">
-    <h3>Activitat 3.10</h3>
+    <h3>Vuelink (Europa)</h3>
     <div class="aaa">
-        <a  class="seccions pright20" href="#seccio1">Buscador de vuelos</a>
-        <a  class="seccions pright20 pleft20" href="#seccio2">Autocomplet</a>
-        <a  class="seccions pleft20" href="#seccio3">Slider</a>
+        <a class="seccions pright20" href="#seccio1">Buscador de vuelos</a>
+        <a class="seccions pleft20" href="#seccio4">Contacte</a>
     </div>
     <input type="text" placeholder="cerca..." class="cerca">
     <div class="button">
@@ -26,86 +27,40 @@
 
 <div class="fondo">
     <div class="grid-primer">
-        <div class="primer fuente fuente-lil redondeado10px p-8">
-            <h1 id="seccio1" class="centro fontclean ">Buscador de vuelos</h1>
-            <div>
+        <div class="primer fuente fuente-lil redondeado10px p-8 p-20top">
+            <h1 id="seccio1" class="centro fontclean ">Buscador de vuelos (Europa)</h1>
+            <div class="centro fontclean p-20top">
                 <label for="tags">Origen: </label>
                 <input id="origen">
                 <label for="tags">Destino: </label>
                 <input id="destino">
             </div>
-            <p class="fuente color"> </p>
         </div>
-        <div class="grid-nuevo gap">
-            <p>FECHA IDA:<input type="text" id="datepicker"></p>
-            <p>FECHA VUELTA:<input type="text" id="datepicker"></p>
+        <div class="fontclean p-20top grid-nuevo gap    ">
+            <div>
+                <p>FECHA IDA:<input type="text" id="ida"></p>
+                <p>Ajusta el precio a tu gusto:</p>
+                <div class="marginbot" id="sliderida">
+                    <div id="custom-handleida" class="ui-slider-handle slider"></div>
+                </div>
+            </div>
+            <div>
+                <p>FECHA VUELTA:<input type="text" id="vuelta"></p>
+                <p>Ajusta el precio a tu gusto:</p>
+                <div class="marginbot" id="slidervuelta">
+                    <div id="custom-handlevuelta" class="ui-slider-handle slider"></div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-<h1 class="fuente margin" id="seccio2">Autocomplet</h1>
-<div class="grid-segundo margin p-40bot">
-
-    <div class="segundo fondo sombra p-8">
-        <img src="1 servicio.png" class="img2">
-        <p class="nom negrita fuente-mid fuente">Disseny Gràfic</p>
-        <p class="descripcio fuente color">Creació de solucions visuals per a la teva marca, incloent logotips,
-            identitat
-            corporativa i publicitat.</p>
-    </div>
-
-    <div class="segundo fondo sombra p-8">
-        <img src="2 servicio.png" class="img2">
-        <p class="nom negrita fuente-mid fuente">Desenvolupament Web i videojocs</p>
-        <p class="descripcio fuente color">Desenvolupament de llocs web personalitzats, des de pàgines corporatives
-            fins a
-            botigues en línia complexes.</p>
-    </div>
-
-    <div class="segundo fondo sombra p-8">
-        <img src="3 servicio.png" class="img2">
-        <p class="nom negrita fuente-mid fuente">SEO i Màrqueting Digital</p>
-        <p class="descripcio fuente color">Optimització per a motors de cerca i estratègies de màrqueting per
-            millorar la teva
-            visibilitat de línia.</p>
-    </div>
-
-    <div class="segundo fondo sombra p-8">
-        <img src="4 servicio.png" class="img2">
-        <p class="nom negrita fuente-mid fuente">Suport Tècnic</p>
-        <p class="descripcio fuente color">Assistènica tècnica i suport continu per a tots els nostres productes i
-            serveis.</p>
-    </div>
-</div>
-
-<div class="fondo">
-    <h1 class="fuente margin p-50top p-40bot" id="seccio3">Slider</h1>
-    <div class="grid-container contenidor-marges p-40bot">
-        <div class="sombra">
-            <img src="imagen1 portfolio.jpg" class="img3">
-            <h2 class="nom negrita fuente-mid fuente">Projecte 1</h2>
-            <p class="descripcio fuente color">Descripció breu del projecte.</p>
-            <p class="nom negrita fuente">Veure Detalls</p>
-        </div>
-        <div class="sombra">
-            <img src="imagen 2 portfolio.jpg" class="img3">
-            <h2 class="nom negrita fuente-mid fuente">Projecte 2</h2>
-            <p class="descripcio fuente color">Descripció breu del projecte.</p>
-            <p class="nom negrita fuente">Veure Detalls</p>
-        </div>
-        <div class="sombra">
-            <img src="imagen 3 portfolio.jpg" class="img3">
-            <h2 class="nom negrita fuente-mid fuente">Projecte 3</h2>
-            <p class="descripcio fuente color">Descripció breu del projecte.</p>
-            <p class="nom negrita  fuente">Veure Detalls</p>
-        </div>
+        
     </div>
 </div>
 <div>
     <div class="centro p-50top p-40bot">
         <h3 class="fuente negrita" id="seccio4">Contacta'ns</h3>
         <p class="fuente color">Si tens alguna consulta, no dubtis a contactar-nos mitjançant el següent formulari.</p>
-    </div> 
+    </div>
     <div class="contenidor-marges2 p-40bot">
         <form class="flex">
             <label for="fname" class="lilmarginbot">Nom:</label>
@@ -121,20 +76,17 @@
 <div class="fondofooter">
     <div class="grid-tercero contenidor-marges2 fuentefooter p-40bot p-50top">
         <div class="">
-            <h3 class="">CIDETech</h3>
-            <p class="">CIDETech és una empresa líder en solucions tecnològiques, dedicada a portar les últimes innovaciones al mercat.</p>
+            <h3 class="">Vuelink</h3>
         </div>
         <div class="flex">
             <h3 class="">Navegació</h3>
-            <a   class="fuentefooter" href="#seccio1">Sobre nosaltres</a>
-            <a  class="fuentefooter" href="#seccio2">Serveis</a>
-            <a   class="fuentefooter" href="#seccio3">Portofolio</a>
-            <a  class="fuentefooter" href="#seccio4">Contacte</a>
+            <a class="fuentefooter" href="#seccio4">Contacte</a>
+            <a class="fuentefooter" href="#seccio1">Buscador de vuelos</a>
         </div>
         <div class="">
             <h3 class="">Contacta'ns</h3>
             <p class="">971 606 499</p>
-            <p class="">info@cidetech.com</p>
+            <p class="">info@vuelink.com</p>
             <p class="">Carrer de l'Arner 3,Palma</p>
         </div>
         <div class="">
@@ -149,62 +101,73 @@
 <div class="fondofooter">
     <div class="grid-cuarto contenidor-marges2 fuentefooter p-40bot">
         <div class="tercero5">
-            <p class="centro">©2023 CIDETech | Dissenyat per <a href="">ghomar@nigul.cide.es</a></p>
+            <p class="centro">©2023 Vuelink | Dissenyat per <a href="">ghomar@nigul.cide.es</a></p>
         </div>
     </div>
-</div>  
+</div>
 </body>
 
 
 <script>
     $(function () {
-        $("#datepicker").datepicker();
+        var handle = $("#custom-handleida, #custom-handlevuelta");
+        $("#sliderida, #slidervuelta").slider({
+            create: function () {
+                handle.text($(this).slider("value"));
+            },
+            slide: function (event, ui) {
+                handle.text(ui.value);
+            }
+        });
+    });
+    $(function () {
+        $("#ida, #vuelta").datepicker();
     });
 
-    $( function() {
-    var availableTags = [
-      "Madrid",
-      "Alemania",
-      "Albania",
-      "Francia",
-      "Croacia",
-      "Italia",
-      "Portugal",
-      "Luxemburgo",
-      "Paises Bajos",
-      "Polonia",
-      "Bélgica",
-      "Reino Unido",
-      "Irlanda",
-      "Islandia",
-      "Noruega",
-      "Suecia",
-      "Finlandia",
-      "Dinamarca",
-      "Ucrania",
-      "Rusia",
-      "República Checa",
-      "Austria",
-      "Suiza",
-      "Eslovenia",
-      "Eslovaquia",
-      "Estonia",
-      "Lituania",
-      "Letonia",
-      "Hungria",
-      "Bulgaria",
-      "Rumania",
-      "Moldavia",
-      "Macedonia",
-      "Bosnia",
-      "Serbia",
-      "Grecia",
-      "Montenegro",
-    ];
-    $( "#origen, #destino" ).autocomplete({
-      source: availableTags
+    $(function () {
+        var availableTags = [
+            "Madrid",
+            "Alemania",
+            "Albania",
+            "Francia",
+            "Croacia",
+            "Italia",
+            "Portugal",
+            "Luxemburgo",
+            "Paises Bajos",
+            "Polonia",
+            "Bélgica",
+            "Reino Unido",
+            "Irlanda",
+            "Islandia",
+            "Noruega",
+            "Suecia",
+            "Finlandia",
+            "Dinamarca",
+            "Ucrania",
+            "Rusia",
+            "República Checa",
+            "Austria",
+            "Suiza",
+            "Eslovenia",
+            "Eslovaquia",
+            "Estonia",
+            "Lituania",
+            "Letonia",
+            "Hungria",
+            "Bulgaria",
+            "Rumania",
+            "Moldavia",
+            "Macedonia",
+            "Bosnia",
+            "Serbia",
+            "Grecia",
+            "Montenegro",
+        ];
+        $("#origen, #destino").autocomplete({
+            source: availableTags
+        });
     });
-  } );
 </script>
 
 

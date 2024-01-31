@@ -9,6 +9,12 @@
 .fontclean{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.marginida{
+    margin-left: 50px;
+}
+.marginvuelta{
+    margin-right: 50px;
+}
 .seccions {
     text-align: center;
     text-decoration: none;
@@ -18,12 +24,19 @@
 .cerca{
     border-radius: 10px;
 }
+.slider{
+    padding: 5px;
+    font-size: 12px;
+}
 .seccions:hover {
     color: black;
     transition-duration: 2s;
 }
 .button {
     display: none;
+}
+.marginbot{
+    margin-bottom: 40px;
 }
 .p-8{
     padding: 8px;
@@ -32,8 +45,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 } 
-
-
+.grid{
+    display: grid;
+}
+.height{
+    height: 100px;
+}
 .grid-primer{
     display: grid;
     
@@ -44,7 +61,6 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-areas: SobreNosaltres;
-    margin:  40px 0px 0px;
     height: 45%;
 }
 .img1{
