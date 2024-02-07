@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import TodoList from './components/TodoList';
-import TodoButton from './components/todoButton';
+import TodoButton from './components/TodoButton';
 
 function App() {
   return (

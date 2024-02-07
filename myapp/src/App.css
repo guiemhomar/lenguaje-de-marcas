@@ -1,7 +1,16 @@
 .App {
   text-align: center;
+  font-family: sans-serif;
 }
-
+html{
+  background-color: #ddd;
+  height: 100%;
+  display: flex;
+}
+body{
+  width: 100%;
+  margin: auto;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

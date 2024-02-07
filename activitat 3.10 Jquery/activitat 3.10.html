@@ -53,7 +53,7 @@
             </div>
         </div>
 
-        
+
     </div>
 </div>
 <div>
@@ -110,8 +110,9 @@
 
 <script>
     $(function () {
-        var handle = $("#custom-handleida, #custom-handlevuelta");
-        $("#sliderida, #slidervuelta").slider({
+        var handle = $("#custom-handleida");
+        $("#sliderida").slider({
+            max: 200,
             create: function () {
                 handle.text($(this).slider("value"));
             },
@@ -121,7 +122,29 @@
         });
     });
     $(function () {
-        $("#ida, #vuelta").datepicker();
+        var handle = $("#custom-handlevuelta");
+        $("#slidervuelta").slider({
+            max: 200,
+            create: function () {
+                handle.text($(this).slider("value"));
+            },
+            slide: function (event, ui) {
+                handle.text(ui.value);
+            }
+        });
+    });
+    $(function () {
+        $("#ida").datepicker({
+            minDate: 0,
+            onSelect: function (selectedDate) {
+                $("#vuelta").datepicker("option", "minDate", selectedDate);
+            }
+        });
+    });
+    $(function () {
+        $("#vuelta").datepicker({
+            minDate: 0
+        });
     });
 
     $(function () {
