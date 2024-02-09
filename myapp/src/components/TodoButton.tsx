@@ -9,8 +9,9 @@ function TodoButton() {
 
     return (
         <div>
-            <p>{cont}</p>
             <button onClick={Click}>Click</button>
+            <p>{cont}</p>
+            
         </div>
     );
 }

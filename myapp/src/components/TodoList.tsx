@@ -2,7 +2,7 @@ import React, { useState, ChangeEvent, FormEvent } from "react";
 import TodoItem from "./Todoitem";
 
 function TodoList(){
-    const [tasks, setTasks] = React.useState(["Tasca 1", "Tasca 2"]);
+    const [tasks, setTasks] = React.useState(["pon mas tareas como esta!"]);
     const [newTask, setNewTask] = useState("");
 
     const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
