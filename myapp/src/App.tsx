@@ -1,18 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import TodoList from './components/TodoList';
-// import TodoButton from './components/TodoButton';
+import React from "react";
+import Tabla from "./Tabla";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <TodoList/>
-        {/* <TodoButton/> */}
-      </header>
+    <div className="container">
+      <h1>Lista de Compras</h1>
+      <Tabla />
     </div>
   );
-}
+};
 
 export default App;
