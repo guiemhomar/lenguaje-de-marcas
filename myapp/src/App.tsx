@@ -1,13 +1,15 @@
 import React from "react";
+
 import Tabla from "./Tabla";
 
-const App: React.FC = () => {
+function App(){
   return (
-    <div className="container">
-      <h1>Lista de Compras</h1>
+    <div className="App">
+      <h1 className="App-header">Lista de Compras</h1>
       <Tabla />
     </div>
   );
-};
+}
 
+  
 export default App;

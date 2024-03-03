@@ -1,31 +1,17 @@
 import React from "react";
 
-interface FilaProps {
-  elemento: {
-    producto: string;
-    cantidad: number;
-    precio: number;
-    tienda: string;
-    notas: string;
-    comprado: boolean;
-    imagen: string;
-  };
+const Fila: React.FC<{ element: { producto: string; cantidad: number; precio: number; tienda: string; notas: string; comprado: boolean; imagen: string; } }> = ({ element }) => {
+    return (
+        <tr>
+            <td>{element.cantidad}</td>
+            <td>{element.producto}</td>
+            <td>{element.precio}</td>
+            <td>{element.tienda}</td>
+            <td>{element.notas}</td>
+            <td>{element.comprado}</td>
+            <td><img src={element.imagen} alt={element.producto} width={50} /></td>
+        </tr>
+    );
 }
-
-const Fila: React.FC<FilaProps> = ({ elemento }) => {
-  return (
-    <tr>
-      <td>{elemento.producto}</td>
-      <td>{elemento.cantidad}</td>
-      <td>{elemento.precio}</td>
-      <td>{elemento.tienda}</td>
-      <td>{elemento.notas}</td>
-      <td>{elemento.comprado ? "Sí" : "No"}</td>
-      <td>
-        <img src={elemento.imagen} alt={elemento.producto} />
-      </td>
-    </tr>
-  );
-};
 
 export default Fila;
