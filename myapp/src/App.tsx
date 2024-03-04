@@ -1,18 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import TodoList from './components/TodoList';
-// import TodoButton from './components/TodoButton';
+import React from "react";
 
-function App() {
+import Tabla from "./Tabla";
+
+function App(){
   return (
     <div className="App">
-      <header className="App-header">
-        <TodoList/>
-        {/* <TodoButton/> */}
-      </header>
+      <h1 className="App-header">Lista de Compras</h1>
+      <Tabla />
     </div>
   );
 }
 
+  
 export default App;

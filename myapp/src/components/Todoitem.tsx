@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 
-function TodoItem({content}: {content: String}) {
-    return <li>{content}</li>;
-}
+// function TodoItem({content}: {content: String}) {
+//     return <li>{content}</li>;
+// }
 
-export default TodoItem;
+// export default TodoItem;
