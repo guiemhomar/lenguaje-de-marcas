@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "set PUBLIC_URL=https://github.com/guiemhomar/lenguaje-de-marcas/tree/myapp/build&&react-scripts build", 
+    "build": "set PUBLIC_URL=https://github.com/guiemhomar/lenguaje-de-marcas/myapp/build&&react-scripts", 
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
