@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "../segundo_react/components/Tabla.tsx", "../segundo_react/components/Lista.ts", "../segundo_react/components/Fila.tsx"  ]
 }

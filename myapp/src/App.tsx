@@ -1,12 +1,12 @@
 import React from "react";
+import TodoList from "./components/TodoList";
 
-import Tabla from "./Tabla";
+
 
 function App(){
   return (
     <div className="App">
-      <h1 className="App-header">Lista de Compras</h1>
-      <Tabla />
+      <TodoList/>
     </div>
   );
 }
