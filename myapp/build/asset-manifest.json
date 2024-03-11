@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "https://github.com/guiemhomar/lenguaje-de-marcas/tree/myapp/build/static/css/main.e6c13ad2.css",
-    "main.js": "https://github.com/guiemhomar/lenguaje-de-marcas/tree/myapp/build/static/js/main.de6411a5.js",
-    "static/js/787.1937f22b.chunk.js": "https://github.com/guiemhomar/lenguaje-de-marcas/tree/myapp/build/static/js/787.1937f22b.chunk.js",
-    "index.html": "https://github.com/guiemhomar/lenguaje-de-marcas/tree/myapp/build/index.html",
-    "main.e6c13ad2.css.map": "https://github.com/guiemhomar/lenguaje-de-marcas/tree/myapp/build/static/css/main.e6c13ad2.css.map",
-    "main.de6411a5.js.map": "https://github.com/guiemhomar/lenguaje-de-marcas/tree/myapp/build/static/js/main.de6411a5.js.map",
-    "787.1937f22b.chunk.js.map": "https://github.com/guiemhomar/lenguaje-de-marcas/tree/myapp/build/static/js/787.1937f22b.chunk.js.map"
+    "main.css": "https://guiemhomar.github.io/lenguaje-de-marcas/myapp/build/static/css/main.e6c13ad2.css",
+    "main.js": "https://guiemhomar.github.io/lenguaje-de-marcas/myapp/build/static/js/main.c705c534.js",
+    "static/js/787.1937f22b.chunk.js": "https://guiemhomar.github.io/lenguaje-de-marcas/myapp/build/static/js/787.1937f22b.chunk.js",
+    "index.html": "https://guiemhomar.github.io/lenguaje-de-marcas/myapp/build/index.html",
+    "main.e6c13ad2.css.map": "https://guiemhomar.github.io/lenguaje-de-marcas/myapp/build/static/css/main.e6c13ad2.css.map",
+    "main.c705c534.js.map": "https://guiemhomar.github.io/lenguaje-de-marcas/myapp/build/static/js/main.c705c534.js.map",
+    "787.1937f22b.chunk.js.map": "https://guiemhomar.github.io/lenguaje-de-marcas/myapp/build/static/js/787.1937f22b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.de6411a5.js"
+    "static/js/main.c705c534.js"
   ]
 }
