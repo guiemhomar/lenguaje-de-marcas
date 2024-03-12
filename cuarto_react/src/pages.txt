@@ -1,0 +1,5 @@
+gitignore ---> borrar el build
+
+cuando esta el programa funcionando, npm run build
+
+te vas al index.html, ctrl-shift + P, pones tu enlace en el primer link, y lo pegas al json, actualizas, cd .., git add . ---> git push
